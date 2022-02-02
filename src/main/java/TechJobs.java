@@ -122,7 +122,7 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
        
        if(someJobs.length == 0){
-            System.out.println("[No Results]")
+            System.out.println("[No Results]");
        }
        else{
        
