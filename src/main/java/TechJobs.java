@@ -122,6 +122,7 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
        
         for (HashMap<String, String> row : someJobs){
+       System.out.println("");
        System.out.println("*****");
        for (Map.Entry<String, String> set :
              row.entrySet()) {
@@ -130,7 +131,6 @@ public class TechJobs {
             
             System.out.println(set.getKey() + ": "
                                + set.getValue());
-            System.out.println("*****");
         }
         System.out.println("*****");
         }
