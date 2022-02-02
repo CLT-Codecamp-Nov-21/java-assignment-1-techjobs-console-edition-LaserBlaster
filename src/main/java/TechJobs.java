@@ -122,9 +122,9 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
        
        if(someJobs.size() == 0){
-           ArrayList<String> str = new ArrayList<String>();
-            str.add("No Results");
-            System.out.println(str);
+           //ArrayList<String> str = new ArrayList<String>();
+            //str.add("No Results");
+            System.out.println("No Results");
        }
        else{
        
