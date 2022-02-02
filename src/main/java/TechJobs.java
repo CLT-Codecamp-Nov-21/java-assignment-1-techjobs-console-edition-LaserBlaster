@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Iterator;
 
 /**
  * Created by LaunchCode
@@ -70,7 +71,7 @@ public class TechJobs {
         }
     }
 
-    // ﻿Returns the key of the selected item from the choices Dictionary
+    // Returns the key of the selected item from the choices Dictionary
     private static String getUserSelection(String menuHeader, HashMap<String, String> choices) {
 
         int choiceIdx = -1;
@@ -119,7 +120,29 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-
-        System.out.println("printJobs is not implemented yet");
+       
+       if(someJobs.size() == 0){
+           //ArrayList<String> str = new ArrayList<String>();
+            //str.add("No Results");
+            System.out.print("No Results");
+       }
+       else{
+       
+       for (HashMap<String, String> row : someJobs){
+       System.out.println("");
+       System.out.println("*****");
+       for (Map.Entry<String, String> set :
+             row.entrySet()) {
+ 
+            // Printing all elements of a Map
+            
+            System.out.println(set.getKey() + ": "
+                               + set.getValue());
+        }
+        System.out.println("*****");
+        }
+    }
+        
+        //System.out.println("printJobs is not implemented yet");
     }
 }
