@@ -81,7 +81,7 @@ public class JobData {
 
             String aValue = row.get(column);
 
-            if (aValue.contains(value)) {
+            if (aValue.toLowerCase().contains(value.toLowerCase())) {
                 jobs.add(row);
             }
         }
@@ -109,7 +109,7 @@ public class JobData {
             for (Map.Entry<String, String> set :
              row.entrySet()){
 
-                 if(set.getValue().toLowerCase().contains(value)){
+                 if(set.getValue().toLowerCase().contains(value.toLowerCase())){
                      jobs.add(row);
                  }
              }
