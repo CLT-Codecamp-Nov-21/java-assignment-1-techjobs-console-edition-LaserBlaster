@@ -121,7 +121,12 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
        
-        for (HashMap<String, String> row : someJobs){
+       if(someJobs.length == 0){
+            System.out.println("[No Results]")
+       }
+       else{
+       
+       for (HashMap<String, String> row : someJobs){
        System.out.println("");
        System.out.println("*****");
        for (Map.Entry<String, String> set :
@@ -134,6 +139,7 @@ public class TechJobs {
         }
         System.out.println("*****");
         }
+    }
         
         //System.out.println("printJobs is not implemented yet");
     }
