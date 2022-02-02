@@ -127,8 +127,10 @@ public class TechJobs {
              row.entrySet()) {
  
             // Printing all elements of a Map
+            System.out.println("*****");
             System.out.println(set.getKey() + ": "
                                + set.getValue());
+            System.out.println("*****");
         }
         
         }
