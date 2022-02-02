@@ -124,7 +124,7 @@ public class TechJobs {
        if(someJobs.size() == 0){
            //ArrayList<String> str = new ArrayList<String>();
             //str.add("No Results");
-            System.out.println("No Results");
+            System.out.print("No Results");
        }
        else{
        
